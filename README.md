@@ -1,4 +1,4 @@
-# Restaurant_Ratings
+# Restaurant Ratings
 
 Lauren Gama, Tahseen Chisti, Myke London
 
