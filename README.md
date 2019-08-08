@@ -11,7 +11,7 @@ Our data science group project combines restaurant ratings from multiple APIs an
 When searching for restaurant ratings, users must typically search for the same restaurant on different websites to see how it is rated on each site. In order to simplify this process, our team decided to create a database of restaurant ratings. We wanted to create a database that would include ratings from multiple review sites so users could simply search for a restaurant once and find all the information they needed.
 
 #### Result
-Using a Yelp [dataset](INSERT KAGGLE LINK), Yellowpages [dataset]( INSERT KAGGLE LINK), the Google Geocode API, and the Google Places API, we were able to gather Pittsburgh restaurant rating data into MySQL.
+Using a Yelp [dataset](https://www.kaggle.com/yelp-dataset/yelp-dataset), Yellowpages [dataset](https://www.kaggle.com/PromptCloudHQ/restaurants-on-yellowpagescom), the Google Geocode API, and the Google Places API, we were able to gather Pittsburgh restaurant rating data into MySQL.
 
 #### Team Efforts
 Taz was responsible for manipulating the Yelp dataset and loading all our data into MySQL. Myke was responsible for manipulating the Yellowpages dataset. I was responsible for acquiring and cleaning the Google Places API data.
