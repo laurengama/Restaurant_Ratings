@@ -14,18 +14,21 @@ When searching for restaurant ratings, users must typically search for the same 
 Using a Yelp [dataset](https://www.kaggle.com/yelp-dataset/yelp-dataset), Yellowpages [dataset](https://www.kaggle.com/PromptCloudHQ/restaurants-on-yellowpagescom), the Google Geocode API, and the Google Places API, we were able to gather Pittsburgh restaurant rating data into MySQL.
 
 #### Team Efforts
-Taz was responsible for manipulating the Yelp dataset and loading all our data into MySQL. Myke was responsible for manipulating the Yellowpages dataset. I was responsible for acquiring and cleaning the Google Places API data.
+Taz and I were responsible for manipulating the Yelp dataset and loading all our data into MySQL. Myke was responsible for manipulating the Yellowpages dataset. I was also responsible for acquiring and cleaning the Google Places API data and performing queries in MySQL.
 
 #### Individual Responsibilities
+* Troubleshoot Yelp loading errors.
 * Perform Google Geocode API call to find the coordinates for Pittsburgh, PA.
 * Perform Google Places API call using parameters including the above coordinates, the radius for our search, and “restaurant” as our location type.
 * Transform the returned JSON data into a pandas data frame by creating empty lists for restaurant name, address, and rating, and then looping through the JSON data to append name, vicinity, and rating to these lists, respectively.
 * Rename columns to Restaurant_G, Address_G, and Rating_G.
 * Drop Pittsburgh from the Address_G column by splitting the address at the comma.
+* Load data into MySQL database. 
+* Perform various queries including joins and aggregates.
 
 #### Challenges
-As a team, we ran into multiple challenges along the way. One of the main issues was scaling back our initial goal for the project. We originally wanted to create a database that would include all the restaurants in Jersey City, but when we found that the Yelp and Yellowpages datasets did not include Jersey City, we had to use a common city across the three datasets: Pittsburgh, PA. Furthermore, in order to avoid paying for our API calls, we were limited to a dataset of only 20 restaurants from the Google Places API. Luckily, we were still able to find a restaurant in common across the datasets.
+As a team, we ran into multiple challenges along the way. One of the main issues was scaling back our initial goal for the project. We originally wanted to create a database that would include all the restaurants in Jersey City, but when we found that the Yelp and Yellowpages datasets did not include Jersey City, we had to use a common city across the three datasets: Pittsburgh, PA. Furthermore, in order to avoid paying for our API calls, we were limited to a dataset of only 20 restaurants from the Google Places API. Luckily, we were still able to find common restaurants across the datasets.
 
 #### Improvements
-With more time (and resources), we would like to expand our database to include more restaurants in Pittsburgh, perhaps more cities, and more data beyond ratings. We would like to use more API data as opposed to potentially outdated Kaggle files. Lastly, we would like to spend more time in MySQL, testing the ease with which we can pull ratings from our database.
+With more time (and resources), we would like to expand our database to include more restaurants in Pittsburgh, perhaps more cities, and more data beyond ratings. We would like to use more API data as opposed to potentially outdated Kaggle files. Lastly, we would like to spend more time running queries in MySQL.
 
